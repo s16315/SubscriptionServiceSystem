@@ -1,0 +1,32 @@
+dotnet ef migrations add init -s ./CSS/ --context CSSContext
+wykonaj w CSS.Infrastructure
+dotnet ef --startup-project ../CSS migrations add MigrationName -c CSSContext
+
+ To undo this action, use 'ef migrations remove'
+
+!!!
+SQL Script
+CREATE TABLE `__EFMigrationsHistory` 
+( 
+    `MigrationId` nvarchar(150) NOT NULL, 
+    `ProductVersion` nvarchar(32) NOT NULL, 
+     PRIMARY KEY (`MigrationId`) 
+);
+
+dotnet ef database update -s ../CSS/ --context CSSContext
+
+
+migracje-aktualizacja
+relacje -> klucze, kolekcje
+await
+
+https://chapsas.com/video-asp-net-core-2-2-rest-api-development-10-user-registration-and-controller-auth/
+
+
+https://docs.microsoft.com/pl-pl/aspnet/core/migration/identity?view=aspnetcore-2.2
+
+https://medium.com/@ozgurgul/asp-net-core-2-0-webapi-jwt-authentication-with-identity-mysql-3698eeba6ff8
+https://jasonwatmore.com/post/2018/08/14/aspnet-core-21-jwt-authentication-tutorial-with-example-api
+https://www.plukasiewicz.net/Artykuly/OAuth2_w_WebAPI
+
+https://auth0.com/blog/securing-asp-dot-net-core-2-applications-with-jwts/
