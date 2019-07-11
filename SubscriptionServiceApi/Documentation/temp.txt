@@ -1,6 +1,6 @@
 dotnet ef migrations add init -s ./CSS/ --context CSSContext
-wykonaj w CSS.Infrastructure
-dotnet ef --startup-project ../CSS migrations add MigrationName -c CSSContext
+wykonaj w .Infrastructure/Helpers
+dotnet ef --startup-project ../../SubscriptionServiceApi.csproj migrations add SSA -c SsaContext
 
  To undo this action, use 'ef migrations remove'
 

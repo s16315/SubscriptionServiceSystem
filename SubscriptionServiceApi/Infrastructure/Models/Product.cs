@@ -4,7 +4,6 @@ namespace SubscriptionServiceApi.Infrastructure.Models
 {
     public class Product : Entity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public float Prince { get; set; }
         public float UpgradePrince { get; set; }

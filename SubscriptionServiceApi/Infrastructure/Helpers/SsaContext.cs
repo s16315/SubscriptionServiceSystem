@@ -7,7 +7,6 @@ namespace SubscriptionServiceApi.Infrastructure
 {
     public class SsaContext : DbContext
     {
-        internal DbSet<User> Users { get; set; }
         internal DbSet<Address> Addresses { get; set; }
         internal DbSet<Discount> Discounts { get; set; }
         internal DbSet<InvoiceData> InvoiceData { get; set; }
@@ -15,21 +14,30 @@ namespace SubscriptionServiceApi.Infrastructure
         internal DbSet<Product> Products { get; set; }
         internal DbSet<ProductVersion> ProductVersions { get; set; }
         internal DbSet<Subscription> Subscriptions { get; set; }
-        
-        public SsaContext(DbContextOptions options) : base(options)
+        internal DbSet<User> Users { get; set; }
+
+
+        public SsaContext(DbContextOptions<SsaContext> options) : base(options)
         {
             
         }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=31.179.186.242;port=59590;database=SubscriptionService;user id=mtPanelDev;password=a8YT*Qb!RcQi");
+            optionsBuilder.UseMySQL(
+                "server=31.179.186.242;" 
+                + "port=59590;"
+                + "database=SubscriptionServiceDB;" 
+                + "user id=mtPanelDev;"
+                + "password=a8YT*Qb!RcQi"
+                );
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SsaContext>();
-            
-            services.AddDbContext<SsaContext>(options => options.UseMySQL("DataSource=dbo.SubscriptionServiceApi.db",
-                builder => builder.MigrationsAssembly("SSA")));
+            services.AddDbContext<SsaContext>(options => options.UseMySQL(
+                "DataSource=dbo.SubscriptionServiceDB.db",
+                builder => builder.MigrationsAssembly("SubscriptionServiceApi.Infrastructure.Helpers")
+                ));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);            
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

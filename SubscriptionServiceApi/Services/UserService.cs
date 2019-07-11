@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 using SubscriptionServiceApi.Infrastructure.Models;
 using SubscriptionServiceApi.Infrastructure.Repositories;
