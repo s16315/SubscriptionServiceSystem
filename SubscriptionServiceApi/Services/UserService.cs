@@ -1,7 +1,6 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using SubscriptionServiceApi.Dtos;
 using SubscriptionServiceApi.Infrastructure.Models;
 using SubscriptionServiceApi.Infrastructure.Repositories;
 
@@ -10,10 +9,11 @@ namespace SubscriptionServiceApi.Services
     public class UserService : IUserService
     {
         private readonly IUsersRepository _iUsersRepository;
-
+        
         public UserService(IUsersRepository iUsersRepository)
         {
             _iUsersRepository = iUsersRepository;
+
         }
 
         
@@ -29,11 +29,9 @@ namespace SubscriptionServiceApi.Services
             if (user == null)
                 return null;
 
-            // check if password is correct
             if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
                 return null;
 
-            // authentication successful
             return user;
         }
 

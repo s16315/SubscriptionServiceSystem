@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SubscriptionServiceApi.Infrastructure
 {
-    public class Entity
+    public abstract class Entity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
