@@ -1,6 +1,6 @@
 namespace SubscriptionServiceApi.Infrastructure.Models
 {
-    public class Person
+    public class Person : Entity
     {
         public string GivenName { get; set; }
         public string FamilyName { get; set; }
