@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace SubscriptionServiceApi.Infrastructure.Models
 {
@@ -12,6 +13,7 @@ namespace SubscriptionServiceApi.Infrastructure.Models
         public bool IsPaid { get; set; }
         public bool DemoAvailable { get; set; }
         public DateTime DemoStartTime { get; set; }
-        public DateTime DemoEndTime { get; set; }        
+        public DateTime DemoEndTime { get; set; }
+        public IEnumerable<Identifier> Identifiers { get; set; }
     }
 }

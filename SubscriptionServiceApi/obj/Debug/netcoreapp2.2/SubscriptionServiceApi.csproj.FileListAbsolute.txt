@@ -1,0 +1,15 @@
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.dll.config
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.deps.json
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.runtimeconfig.json
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.runtimeconfig.dev.json
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.dll
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\bin\Debug\netcoreapp2.2\SubscriptionServiceApi.pdb
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.csprojAssemblyReference.cache
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.csproj.CoreCompileInputs.cache
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.RazorAssemblyInfo.cache
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.RazorAssemblyInfo.cs
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.AssemblyInfoInputs.cache
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.AssemblyInfo.cs
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.RazorTargetAssemblyInfo.cache
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.dll
+C:\Users\Tomek\RiderProjects\SubscriptionServiceSystem\SubscriptionServiceApi\obj\Debug\netcoreapp2.2\SubscriptionServiceApi.pdb
