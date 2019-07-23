@@ -7,14 +7,16 @@ namespace SubscriptionServiceApi.Infrastructure
 {
     public class SsaContext : DbContext
     {
-        internal DbSet<Address> Addresses { get; set; }
-        internal DbSet<Discount> Discounts { get; set; }
-        internal DbSet<InvoiceData> InvoiceData { get; set; }
-        internal DbSet<Person> Persons { get; set; }
-        internal DbSet<Product> Products { get; set; }
-        internal DbSet<ProductVersion> ProductVersions { get; set; }
-        internal DbSet<Subscription> Subscriptions { get; set; }
-        internal DbSet<User> Users { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<HistoryLog> HistoryLogs { get; set; }
+        public DbSet<Identifier> Identifiers { get; set; }
+        public DbSet<InvoiceData> InvoiceData { get; set; }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductVersion> ProductVersions { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         public SsaContext(DbContextOptions<SsaContext> options) : base(options)
